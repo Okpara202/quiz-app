@@ -72,7 +72,7 @@ function Quiz() {
         <>
             {quiz}
 
-            <QuizBtn handleNext={getNextQuestion} handlePrev={getPreviousQuestion} />
+            <QuizBtn handleNext={getNextQuestion} handlePrev={getPreviousQuestion} data={data} questionNumber={questionNumber} />
         </>
     )
 }
