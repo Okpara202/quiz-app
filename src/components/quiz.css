@@ -77,3 +77,9 @@ label {
 .title p {
     font-size: 1.4rem;
 }
+
+.instructions{
+    text-align: center;
+    padding: 50px;
+    line-height: 1.5;
+}
