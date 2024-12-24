@@ -71,7 +71,7 @@ function Quiz() {
     return (
         <>
 
-            <hr />
+            
 
             {quiz}
 
