@@ -58,6 +58,8 @@ function Quiz() {
     const quiz = <div className="quiz">
         <h2 className="question">{questionNumber}. {data?.[count].question.text}</h2>
         {ShuffleAnswer([...(data?.[count].incorrectAnswers || []), data?.[count].correctAnswer as string]).map(answer => {
+
+
             return < ul key={answer} className="answer">
                 <label>
                     <input type="radio" name="answer" />
@@ -71,7 +73,7 @@ function Quiz() {
     return (
         <>
 
-            
+
 
             {quiz}
 

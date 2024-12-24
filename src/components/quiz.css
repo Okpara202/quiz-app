@@ -10,7 +10,6 @@
     width: 90%;
     max-width: 650px;
     border-radius: 3rem;
-    box-shadow: 0 0 3px gray;
 }
 
 .quiz {
@@ -72,6 +71,9 @@ label {
     padding: 10px 50px;
     line-height: 1.5;
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title p {
@@ -82,4 +84,11 @@ label {
     text-align: center;
     padding: 50px;
     line-height: 1.5;
+}
+
+.score{
+    background-color: rgba(0 , 0, 0, 0.7);
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: white;
 }
