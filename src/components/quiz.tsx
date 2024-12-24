@@ -60,7 +60,7 @@ function Quiz() {
         {ShuffleAnswer([...(data?.[count].incorrectAnswers || []), data?.[count].correctAnswer as string]).map(answer => {
             return < ul key={answer} className="answer">
                 <label>
-                    <input type="radio" />
+                    <input type="radio" name="answer" />
                     <li>{answer}</li>
                 </label>
             </ul>
@@ -70,7 +70,12 @@ function Quiz() {
 
     return (
         <>
+
+            <hr />
+
             {quiz}
+
+            <hr />
 
             <QuizBtn handleNext={getNextQuestion} handlePrev={getPreviousQuestion} data={data} questionNumber={questionNumber} />
         </>
