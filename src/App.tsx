@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
 
  
-const [score, setScore] = useState<number>(0)
+const [score ] = useState<number>(0)
  
 
   const router = createBrowserRouter(createRoutesFromElements(
