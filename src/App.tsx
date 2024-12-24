@@ -7,12 +7,12 @@ import { useState } from "react";
 function App() {
 
  
-
+const [score, setScore] = useState<number>(0)
  
 
   const router = createBrowserRouter(createRoutesFromElements(
     <>
-      <Route path="/" element={<Title  />} >
+      <Route path="/" element={<Title score={score} />} >
         <Route index element={<Instruction />} />
         <Route path="quiz" element={<Quiz  />} />
       </Route>
